@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>01 Isi Semua Field Agreement</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97a3ef25-cab1-471a-bbf4-4d4b1bc2a3fc</testCaseGuid>
+   <variable>
+      <defaultValue>'D:\\1.jpg\r\n'</defaultValue>
+      <description></description>
+      <id>8322d77a-18ea-44a4-a4d5-d769f973b26a</id>
+      <masked>false</masked>
+      <name>upload</name>
+   </variable>
+   <variable>
+      <defaultValue>'BERNADETTE.FANNY@KALBE.CO.ID'</defaultValue>
+      <description></description>
+      <id>130653c7-faba-4ce5-b6e8-2e09c40652d0</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'degj'</defaultValue>
+      <description></description>
+      <id>d0180214-f1c1-44d4-a6c3-8f2f38f70cf1</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

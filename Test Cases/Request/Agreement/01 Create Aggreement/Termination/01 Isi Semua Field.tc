@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>01 Isi Semua Field</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>19a13e4c-d0f6-490d-9e64-9f6186fb88f9</testCaseGuid>
+   <variable>
+      <defaultValue>'D:\\1.jpg\r\n'</defaultValue>
+      <description></description>
+      <id>26a0e50f-bbe5-4d6e-94e5-4875fee2ac88</id>
+      <masked>false</masked>
+      <name>upload</name>
+   </variable>
+   <variable>
+      <defaultValue>'BERNADETTE.FANNY@KALBE.CO.ID'</defaultValue>
+      <description></description>
+      <id>ae52d608-0d32-4b6e-9d20-89a6ae2e70a4</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'degj'</defaultValue>
+      <description></description>
+      <id>37425ea7-3476-4e81-befb-e9c14b304439</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

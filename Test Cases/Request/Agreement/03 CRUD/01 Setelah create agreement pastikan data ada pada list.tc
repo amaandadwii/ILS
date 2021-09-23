@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>01 Setelah create agreement pastikan data ada pada list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c4c3bf4b-688a-46de-b9f3-e3c90cd500fa</testCaseGuid>
+</TestCaseEntity>

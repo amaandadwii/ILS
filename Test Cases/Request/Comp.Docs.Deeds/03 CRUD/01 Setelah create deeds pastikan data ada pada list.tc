@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>01 Setelah create deeds pastikan data ada pada list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c412d7d2-140a-413d-87c4-1ea526500152</testCaseGuid>
+</TestCaseEntity>

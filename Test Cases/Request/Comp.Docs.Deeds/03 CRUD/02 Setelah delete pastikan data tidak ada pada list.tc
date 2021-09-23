@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>02 Setelah delete pastikan data tidak ada pada list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbc5a47c-1474-4dbe-8479-8d199363f129</testCaseGuid>
+</TestCaseEntity>
