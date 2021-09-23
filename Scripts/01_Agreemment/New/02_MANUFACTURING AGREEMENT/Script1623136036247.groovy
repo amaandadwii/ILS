@@ -1,0 +1,227 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement as WebElement
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://stgsvr.onekalbe.com:8225/')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Your Username_Username'), 
+    'BERNADETTE.FANNY@KALBE.CO.ID')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Your Username_Password'), 
+    'XA8EWhIfeOQ=')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_LOG IN'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/a_Request'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/a_Agreement'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Create New'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/label_New'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/select_Choose your optionDISTRIBUTION AGREE_b55422'), 
+    'MANUFACTURING AGREEMENT', true)
+
+WebElement element = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/Input_Date'), 
+    30)
+
+WebUI.executeJavaScript('arguments[0].value=\'2021-06-10\'', Arrays.asList(element))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/textarea_Notes_RequestHeader.Notes'), 
+    'Test')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input__select-dropdown form-control'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input__search w-100 d-block'), 
+    'kalbe far')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/span_PT. Kalbe Farma Tbk'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/select_Choose your optionInnogene Kalbiotec_f3d6d9'), 
+    'PT. Kalbe Farma Tbk.', true)
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Add Partner'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Partner_Partner'), 'ASD')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Add'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Duration_ManufacturingAgreement.Duration2New'), 
+    '5')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/select_Choose                            Ye_0b68d1'), 
+    'Days(s)', false)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/select_Choose                    YES       _22e15d'), 
+    'NO', true)
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/label_Exclusive'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Product Registration Holder_Manufactu_a35a52'), 
+    'Test')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Product Registration Cost Responsibil_720c15'), 
+    '50')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Intellectual Property Holder_Manufact_9f02a7'), 
+    'ABAN')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/label_YES'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Fixed_ManufacturingAgreement.FixedNew'), 
+    '5')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Rolling_ManufacturingAgreement.RollingNew'), 
+    '5')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Purchase Order Submission (days)_Manu_f6d0c1'), 
+    '5')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/select_Choose your optionCFR  Cost and Frei_b3b292'), 
+    'Others', true)
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/textarea_Delivery Terms_ManufacturingAgreem_91b3b6'), 
+    'JNE')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/select_Choose your option                  _0805bd'), 
+    'Others', true)
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/textarea_Term Of Payment_ManufacturingAgree_8275cf'), 
+    'ABC')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/textarea_Duration of Payment (days)_Manufac_11ba4c'), 
+    '5')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Value ()_btn btn-warning btn-sm btn-_a6c596'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Value ()_ValuePenalty'), 
+    '5')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Edit'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_true_btn btn-warning btn-sm btn-roun_f65523'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Value ()_ValuePenalty'), 
+    '5')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Edit'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Lead Time for Price Changes (days)_Ma_a79ceb'), 
+    '3')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Days of Inventory (days)_Manufacturin_84ace9'), 
+    '3')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Artwork Responsibility_ManufacturingA_e335f1'), 
+    'AAA')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Raw Material Responsibility_Manufactu_1c9d63'), 
+    'BBB')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Packaging Responsibility_Manufacturin_9b9115'), 
+    'CCC')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Product Return  Nonconformity (days)__42b832'), 
+    '2')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Product Return  DamageExpired (days)__053d43'), 
+    '2')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/div_Governing Law_row  pb-3 div-section'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Governing Law_ManufacturingAgreement._7c67f7'), 
+    'AA')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Dispute Resolution_ManufacturingAgree_3d6f48'), 
+    'BB')
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Notice of Termination (days)_Manufact_892b3b'), 
+    '5')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Add Product'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Product_Product'), 'AB')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Add_1'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Add Territory'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/label_Area'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Territory_Teritory2'), 'Tane')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Add_1_2'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_CurrencyUnit_btn btn-warning btn-sm _be991a'))
+
+WebUI.setText(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/input_Currency  Unit_CurrencyUnit'), 
+    '500000')
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/button_Edit_1'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/label_Attachment'))
+
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/Upload_Attachment_1'))
+
+WebUI.delay(2)
+
+CustomKeywords.'test.testclass.uploadFile'(findTestObject('Object Repository/Upload_Attachment/button_Choose File'), 'H:\\Magang\\ILS\\SS\\LibAggrement-01.jpg')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Upload_Attachment/button_Edit'))
+
+//------------------------------------------
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/Upload_Attachment_2'))
+
+WebUI.delay(2)
+
+CustomKeywords.'test.testclass.uploadFile'(findTestObject('Object Repository/Upload_Attachment/button_Choose File'), 'H:\\Magang\\ILS\\SS\\LibAggrement-01.jpg')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Upload_Attachment/button_Edit'))
+
+//--------------------------------------------
+WebUI.click(findTestObject('Object Repository/Create Agreement/MANUFACTURING AGREEMENT/Upload_Attachment_3'))
+
+WebUI.delay(2)
+
+CustomKeywords.'test.testclass.uploadFile'(findTestObject('Object Repository/Upload_Attachment/button_Choose File'), 'H:\\Magang\\ILS\\SS\\LibAggrement-01.jpg')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Upload_Attachment/button_Edit'))
+
+WebUI.click(findTestObject('Create Agreement/button_Save_Create_Agrrement'))
+
+WebUI.click(findTestObject('Create Agreement/OK_AfterSaveAggrement'))
+
+WebUI.delay(3)
+
+WebUI.verifyElementPresent(findTestObject('Create Agreement/label_Document Status  DRAFT'), 0)
+
+WebUI.closeBrowser()
+
