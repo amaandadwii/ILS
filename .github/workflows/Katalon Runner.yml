@@ -15,4 +15,4 @@ jobs:
       with:
           version: '8.1.0'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= ${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= e209b7c6-6e86-421b-8fe2-d635a5a62da5 --config -webui.autoUpdateDrivers=true'
